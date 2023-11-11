@@ -10,24 +10,13 @@
 
   <body>
     <?php
-        $array = array(1, 2, 3, 4, 5);
+        $array = array("margherita", "diavola", "papatosa", "marinara", "prosciutto e funghi");
         foreach ($array as $item) 
         {
         ?>
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="https://m.media-amazon.com/images/I/71ftx+nXZuL._SL1500_.jpg" class="img-fluid rounded-start" alt="il santo">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">IL SANTO</h5>
-                  <p class="card-text">Di Marco Travaglio</p>
-                  <p class="card-text"><small class="text-body-secondary">Il libro definitivo con tutto ciò che dobbiamo sapere e ricordare per evitare il pericolo peggiore: il berlusconismo senza Berlusconi.</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
+
         <?php
+        
         echo "$item";
         }
         
