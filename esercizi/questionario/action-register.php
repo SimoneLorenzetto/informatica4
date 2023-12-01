@@ -21,6 +21,7 @@
     </style>
 </head>
 <body>
+    <h1>Benvenuto <?= $_GET['nome'] ?> </h1>
     <h2>Dati Utente Registrato</h2>
     <table>
         <tr>
