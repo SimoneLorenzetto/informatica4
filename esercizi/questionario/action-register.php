@@ -5,10 +5,8 @@
     <style>
         body {
             <?php
-            if (isset($_GET['coloreSfondo'])) {
                 $coloreSfondo = $_GET['coloreSfondo'];
                 echo "background-color: $coloreSfondo;";
-            }
             ?>
         }
         table {
@@ -21,6 +19,10 @@
     </style>
 </head>
 <body>
+    <?php
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        foreach ($_GET as $k => $v) {
+    ?>
     <h1>Benvenuto <?= $_GET['nome'] ?> </h1>
     <h2>Dati Utente Registrato</h2>
     <table>
@@ -41,6 +43,10 @@
                 </td>
             </tr>
 
+        <?php
+            }
+        }
+        ?>
         <?php
             }
         }
